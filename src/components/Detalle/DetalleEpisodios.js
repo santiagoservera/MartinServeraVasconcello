@@ -26,7 +26,7 @@ export default function DetalleEpisodios() {
       <div>
         <h1>{episodio.name}</h1>
         <img src={episodio.image} alt={episodio.name} />
-        <h2>{episodio.air_date}</h2>
+        <h2>Fecha de lanzamiento :{episodio.air_date}</h2>
         {/* Mostrar otros detalles del episodio aquí */}
       </div>
     ) : (

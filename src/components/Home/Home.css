@@ -15,8 +15,16 @@
   
   h1 {
     font-size: 36px;
-    color: #000000; /* Color azul claro */
-    margin-bottom: 20px; /* Espacio entre el título y los párrafos */
+    font-family: 'Baloo', sans-serif; /* Fuente personalizada de Google Fonts */
+    color: #000000; /* Color de texto negro */
+    margin-bottom: 20px;
+    transition: transform 0.3s, text-shadow 0.3s; /* Transiciones para suavizar el efecto */
+  }
+  
+  /* Efecto de "derretimiento" al pasar el mouse sobre el título */
+  h1:hover {
+    transform: skewX(-10deg) scale(1.2); /* Deforma el texto horizontalmente y lo escala */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega una sombra al texto */
   }
   
   p {

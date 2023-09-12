@@ -9,7 +9,7 @@ export default function Tarjetas({ Data, tipo }) {
     <Link to={rutaDetalle} className="TarjetaEnlace"> {/* Envuelve toda la tarjeta con el enlace */}
       <div className="Tarjeta">
         <h2>{Data.name}</h2>
-        <img src={Data.image} alt={Data.name} />
+        <img src={Data.image} alt={Data.name} style={{ filter: "brightness(0) invert(1)" }} />
       </div>
     </Link>
   );
