@@ -8,6 +8,7 @@ import Home from "./components/Home/Home";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import DetallePersonaje from "./components/Detalle/DetallePersonaje";
+import DetalleEpisodios from "./components/Detalle/DetalleEpisodios";
 function App() {
   return (
     <div>
@@ -17,7 +18,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/personajes" element={<PersonajeContainer />} />
           <Route path="/episodios" element={<EpisodesContainer />} />
-          <Route path="/detallePersonaje/:id" component={<DetallePersonaje/>} />
+          <Route path="/detallePersonaje/:id" element={<DetallePersonaje/>} />
+          <Route path="/detalleEpisodio/:id" element={<DetalleEpisodios/>} />
         </Routes>
       </div>
 

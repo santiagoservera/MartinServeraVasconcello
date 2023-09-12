@@ -2,9 +2,9 @@
 
 /* Estilos generales del Navbar */
 .navbar {
-    background-color: #333;
-    color: white;
-    padding: 10px;
+    background-color: #000000;
+    color: rgb(0, 0, 0);
+    padding: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,6 +22,7 @@
   .navbar h1 {
     margin: 0;
     font-size: 24px;
+    color: #793b81;
   }
   
   .navbar h2 {
@@ -37,6 +38,6 @@
   }
 
   .navbar a {
-    color: #0077b6;
+    color: #793b81;
   }
   

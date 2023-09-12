@@ -1,0 +1,35 @@
+/* Estilo para los botones de Siguiente y Anterior */
+.containerPJ{
+  background-color: black;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .button-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilo para el botón de Siguiente */
+  .button-container .next-button {
+    margin-left: auto;
+  }
+  
+  /* Estilo para el botón de Anterior */
+  .button-container .prev-button {
+    margin-right: auto;
+  }
+  

@@ -1,0 +1,49 @@
+/* Estilo para la tarjeta de detalle de personaje */
+body {
+  background-color: #000000;
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+  padding: 0; /* Elimina el espacio interno predeterminado del cuerpo */
+}
+
+.DetallePersonaje {
+  background-image: url('E:\Programacion\Facultad\Desarrollo aplicativo\Practica\parcial1\rickandmorty\src\Assets/tarjetaBackground.jpg');
+  background-color: #000000;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  color: #000000; /* Color de texto blanco */
+  display: flex; /* Añade flexbox */
+  flex-direction: column; /* Alinea los elementos en una columna vertical */
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente */
+}
+
+/* Estilo para el nombre del personaje */
+.DetallePersonaje h1 {
+  position: relative;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.DetallePersonaje h2{
+  color: #000000;
+}
+
+/* Estilo para la imagen del personaje */
+.DetallePersonaje img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+/* Estilo para otros detalles del personaje */
+.DetallePersonaje .otros-detalles {
+  font-size: 1.2rem;
+  color: #000000;
+  margin-top: 10px;
+}

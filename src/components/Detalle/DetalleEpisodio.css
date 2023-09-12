@@ -1,0 +1,41 @@
+/* Estilo para la tarjeta de detalle de episodio */
+body {
+  background-color: #000000;
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+  padding: 0; /* Elimina el espacio interno predeterminado del cuerpo */
+}
+.DetalleEpisodios {
+  background-image: url('E:\Programacion\Facultad\Desarrollo aplicativo\Practica\parcial1\rickandmorty\src\Assets/tarjetaBackground.jpg');
+  background-color: #000000;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  color: #FFFFFF; /* Color de texto blanco */
+  display: flex; /* Añade flexbox */
+  flex-direction: column; /* Alinea los elementos en una columna vertical */
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente */
+}
+
+/* Estilo para el título del episodio */
+.DetalleEpisodios h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Estilo para la imagen del episodio */
+.DetalleEpisodios img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+/* Estilo para la fecha de aire del episodio */
+.DetalleEpisodios h2 {
+  font-size: 1.2rem;
+  color: #777;
+}

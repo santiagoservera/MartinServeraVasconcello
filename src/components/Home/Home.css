@@ -1,6 +1,6 @@
 /* Home.css */
 .container {
-    background-image: url('E:\Programacion\Facultad\Desarrollo aplicativo\Practica\parcial1\rickandmorty\src\Assets/background.jpg');
+    background-image: url('E:\Programacion\Facultad\Desarrollo aplicativo\Practica\parcial1\rickandmorty\src\Assets/cardBackground.jpg');
     background-size: 100%;
     background-position: center;
     min-height: 100vh; /* Esto garantiza que la imagen de fondo cubra toda la pantalla */
@@ -10,12 +10,12 @@
     justify-content: flex-start; /* Alinea el contenido en la parte superior */
     padding: 20px; /* Añade un espacio interno para separar el contenido del borde */
     font-family: Arial, sans-serif;
-    color: #ffffff;
+    color: #000000;
   }
   
   h1 {
     font-size: 36px;
-    color: #0077b6; /* Color azul claro */
+    color: #000000; /* Color azul claro */
     margin-bottom: 20px; /* Espacio entre el título y los párrafos */
   }
   

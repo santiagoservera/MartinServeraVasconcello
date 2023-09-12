@@ -1,16 +1,39 @@
+/* Estilo para las tarjetas */
 .Tarjeta {
-    border: 1px solid black;
-    width: calc(50% - 20px); /* Para dos columnas, calculamos el 50% del ancho y restamos el margen */
-    padding: 20px;
-    margin: 10px;
-    background-color: bisque;
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
-    display: inline-block; /* Muestra las tarjetas en línea */
-    vertical-align: top; /* Alinea las tarjetas en la parte superior */
+  background-image: url('E:\Programacion\Facultad\Desarrollo aplicativo\Practica\parcial1\rickandmorty\src\Assets/tarjetaBackground.jpg');
+  border: 1px solid #000000;
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Al hacer hover, agranda ligeramente la tarjeta */
+.Tarjeta:hover {
+  transform: scale(1.02);
+}
+
+/* Estilo para el título */
+.Tarjeta h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+/* Estilo para la imagen */
+.Tarjeta img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+/* Estilos para dispositivos móviles (pantallas de hasta 768px) */
+@media (max-width: 768px) {
+  .Tarjeta {
+    width: 100%; /* Ancho completo en dispositivos móviles */
+    margin: 10px 0; /* Espacio vertical entre las tarjetas */
   }
-  
-  /* Estilo para borrar el margen derecho de la última tarjeta en cada fila */
-  .Tarjeta:nth-child(2n) {
-    margin-right: 0;
-  }
-  
+}

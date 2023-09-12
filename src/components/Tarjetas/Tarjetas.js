@@ -1,14 +1,16 @@
 import React from "react";
-import { Link } from 'react-router-dom'; // Importa Link desde React Router
+import { Link } from 'react-router-dom';
 import "./Tarjetas.css";
 
-export default function Tarjetas({ Data }) {
+export default function Tarjetas({ Data, tipo }) {
+  const rutaDetalle = tipo === 'personaje' ? `/detallePersonaje/${Data.id}` : `/detalleEpisodio/${Data.id}`;
+
   return (
-    <div className="Tarjeta">
-      <h2>{Data.name}</h2>
-      <Link to={`/detallePersonaje/${Data.id}`}> 
+    <Link to={rutaDetalle} className="TarjetaEnlace"> {/* Envuelve toda la tarjeta con el enlace */}
+      <div className="Tarjeta">
+        <h2>{Data.name}</h2>
         <img src={Data.image} alt={Data.name} />
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 }
