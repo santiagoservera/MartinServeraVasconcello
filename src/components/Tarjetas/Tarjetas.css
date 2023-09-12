@@ -1,0 +1,16 @@
+.Tarjeta {
+    border: 1px solid black;
+    width: calc(50% - 20px); /* Para dos columnas, calculamos el 50% del ancho y restamos el margen */
+    padding: 20px;
+    margin: 10px;
+    background-color: bisque;
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    display: inline-block; /* Muestra las tarjetas en línea */
+    vertical-align: top; /* Alinea las tarjetas en la parte superior */
+  }
+  
+  /* Estilo para borrar el margen derecho de la última tarjeta en cada fila */
+  .Tarjeta:nth-child(2n) {
+    margin-right: 0;
+  }
+  

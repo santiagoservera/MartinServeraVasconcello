@@ -1,0 +1,42 @@
+/* Navbar.css */
+
+/* Estilos generales del Navbar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Estilos para el contenedor de los elementos "Personajes" y "Episodios" */
+  .navbar .tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre los elementos */
+  }
+  
+  /* Estilos para los elementos del Navbar */
+  .navbar h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .navbar h2 {
+    margin: 0;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el tab activo */
+  .navbar h2.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .navbar a {
+    color: #0077b6;
+  }
+  
