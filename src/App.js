@@ -5,24 +5,32 @@ import PersonajeContainer from "./components/PersonajesContainer/PersonajeContai
 import Navbar from "./components/Navbar/Navbar";
 import EpisodesContainer from "./components/EpisodesContainer/EpisodesContainer";
 import Home from "./components/Home/Home";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import DetallePersonaje from "./components/Detalle/DetallePersonaje";
 import DetalleEpisodios from "./components/Detalle/DetalleEpisodios";
+
+
 function App() {
+  // Obtenemos la ubicación actual
+  const location = useLocation();
+
+  // Definimos una variable para determinar si se debe mostrar el Navbar
+  const showNavbar = location.pathname !== "/";
+
   return (
     <div>
-      <Navbar/>
-      <div>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/personajes" element={<PersonajeContainer />} />
-          <Route path="/episodios" element={<EpisodesContainer />} />
-          <Route path="/detallePersonaje/:id" element={<DetallePersonaje/>} />
-          <Route path="/detalleEpisodio/:id" element={<DetalleEpisodios/>} />
-        </Routes>
-      </div>
+      {/* Condición para mostrar el Navbar */}
+      {showNavbar && <Navbar />}
 
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/personajes" element={<PersonajeContainer />} />
+        <Route path="/episodios" element={<EpisodesContainer />} />
+        <Route path="/detallePersonaje/:id" element={<DetallePersonaje />} />
+        <Route path="/detalleEpisodio/:id" element={<DetalleEpisodios />} />
+      </Routes>
     </div>
   );
 }

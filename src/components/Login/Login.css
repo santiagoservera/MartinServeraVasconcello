@@ -1,0 +1,96 @@
+.Logincontainer1 {
+    background-image: url('E:\Programacion\Facultad\Desarrollo aplicativo\Practica\parcial1\rickandmorty\src\Assets/backgroundLogin.jpg');
+    background-size: 100%;
+    background-position: left;
+    min-height: 100vh; /* Esto garantiza que la imagen de fondo cubra toda la pantalla */
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start; /* Alinea el contenido en la parte superior */
+    padding: 20px; /* Añade un espacio interno para separar el contenido del borde */
+    font-family: Arial, sans-serif;
+    color: #793b81;
+    
+  }
+
+  .login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.Logincontainer1 h1:hover {
+    transform: none; /* Anula la transformación en hover */
+    text-shadow: none; /* Anula la sombra en hover */
+  }
+
+body h1 {
+    color:#793b81;
+    
+    
+}
+.input {
+    position: relative;
+    font-size:16px;
+    width: 200px;
+    height: 20px;
+    right: 20 px;
+    bottom: 15px;
+ }
+ 
+ 
+  
+ .button { 
+    display: inline-block; 
+    padding: 5px 5px;
+    color: black;
+    position: absolute;
+    top: 48%;
+    left: 4.70%;
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
+    font-family: 'Rubik One', sans-serif;
+    text-decoration: none;
+    font-size: 2vw;
+    transition: all .5s;
+    background-color: #793b81;
+  
+    &::before {
+      @extend %test;
+      bottom: -15px;
+      height: 15px;
+      width: 100%;
+      left: 8px;
+      transform: skewX(45deg);
+      background-color: darken(#793b81, 20%);
+    }
+  
+    &::after {
+      @extend %test;
+      right: -15px;
+      height: 100%;
+      width: 15px;
+      bottom: -8px;
+      transform: skewY(45deg);
+      background-color: darken(#793b81, 30%);
+    }
+  
+    &:active {
+      margin-left: 10px;
+      margin-top: 10px;
+      &::before {
+        bottom: -5px;
+        height: 5px;
+        left: 3px;
+      }
+      
+      &::after {
+        right: -5px;
+        width: 5px;
+        bottom: -3px;
+      } 
+   
+ }
+}

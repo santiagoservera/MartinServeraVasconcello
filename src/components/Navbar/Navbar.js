@@ -10,9 +10,12 @@ export default function Navbar({ onTabChange }) {
     <div className="navbar">
       <h1>Rick and Morty</h1>
       <nav className="tabs">
-       <Link to={'/'}>Home</Link>
+       
+       
        <Link to={'/personajes'}>Personajes</Link>
        <Link to={'/episodios'}>Episodios</Link>
+       <Link to={'/Home'}>Inicio</Link>
+       <Link to={'/'}>Logout</Link>
       </nav>
     </div>
   );
